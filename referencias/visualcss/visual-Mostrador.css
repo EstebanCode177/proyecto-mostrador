@@ -1,0 +1,384 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: sans-serif;
+    text-decoration: none;
+    color: rgb(2, 2, 192);
+    background-color: rgb(12, 64, 162);
+}
+
+/* fondo */
+ .navegador {
+    width: 100%;
+    height: 100px;
+    background-color: rgba(12, 64, 162, 0.39);
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+/* logo */
+ .logonav {
+    background-color: rgba(255, 255, 255, 0.652);
+    padding: 15px;
+    height: auto;
+    grid-column: 1/3;
+    grid-row: 1;
+}
+
+.logonav {
+    display: flex;
+    flex-direction: column;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.logo{
+    width: 100px;
+} 
+
+
+
+.usuario {
+    height: 100%;
+    /* background-color: rgba(137, 5, 66, 0.697); */
+    grid-column: -1;
+    grid-row: 1;
+}
+
+.usuarios {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    align-content: flex-end;
+    justify-content: flex-end;
+}
+
+.usuario {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.usuarios {
+    grid-row: 2;
+}
+#btn-inicio,
+#btn-registro {
+    font-size: 11px;
+    background-color: rgba(59, 113, 215, 0.39);
+    width: 50px;
+    height: 20px;
+    padding: 4px;
+    border: none;
+    color: white;
+    
+}
+/* menu */
+/* buscando */
+
+/* buscador */
+
+.busqueda {
+    /* background-color: red; */
+    height: 100%;
+    width: 100%;
+    grid-column: -1;
+    grid-row: 1;
+}
+.busqueda{
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+}
+.buscando {
+    grid-row: 3;
+}
+
+.buscando {
+    background-color: rgba(59, 113, 215, 0.39);
+    width: 280px;
+    height: 25px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.buscando p {
+    font-family: sans-serif;
+    font-size: 12px;
+    color: white;     
+    margin-right: 5px;
+
+}
+
+#btn-reciente,
+#btn-popular,
+#btn-enstock
+{
+    font-size: 12px;
+    height: 20px; 
+    color: white;   
+    background-color: rgba(5, 48, 127, 0.794);
+    margin: 5px;
+    padding: 7px;
+    border: none;
+}
+
+
+/* fondo Mostrador */
+.grilla-Mostrador {
+    width: 100%;
+    height: 83vh;
+    background-color: rgba(155, 189, 251, 0.39);
+    display: grid;
+    grid-template-columns: 2fr repeat(2, 3fr) 2fr;
+    grid-template-rows: 30px repeat(7, 1fr);
+}
+
+.lateral-izq {
+    background-color: rgb(5, 12, 140);
+    grid-column: 1/2;
+    grid-row: 1/9
+}
+
+.venta {
+ 
+    grid-column: 2/4; 
+    grid-row: 1/9;
+    background-color: rgb(255, 0, 144);
+    border-color: 3px white;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 30px repeat(7, 1fr);
+}
+
+
+.seleccion {
+    background-color: rgb(253, 254, 254);
+    grid-column: 1/3;
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 30px;;
+}
+
+.productos {
+    background-color: rgb(0, 255, 21);
+    width: auto;
+    padding: 5px;
+    grid-column: 1/2;
+    grid-row: 1;
+}
+
+.mapa1{
+    padding: 5px;
+    grid-column: 2/3;
+    grid-row: 1;
+}
+
+.grilla-venta {
+    background-color: rgb(0, 255, 21);
+    grid-column: 1/3;
+    grid-row: 2/9;
+    gap: 5px;
+    
+} 
+
+/* queda en espera para productos */
+/* .vende {
+    background-color: white;
+    gri
+} */
+
+.lateral-der {
+    background-color: rgb(216, 9, 9);
+    grid-column: 4/5;
+    grid-row: 1/9    
+} 
+
+
+
+@media screen and (max-width: 500px) {
+
+/* fondo */
+.navegador {
+    width: 100%;
+    height: 60px;
+    background-color: rgba(12, 64, 162, 0.39);
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 2fr;
+}
+
+/* logo */
+.logonav {
+    background-color: rgba(255, 255, 255, 0.652);
+    padding: 15px;
+    height: auto;
+    grid-column: 1/2;
+    grid-row: 1/3;
+}
+
+.logonav {
+    display: flex;
+    flex-direction: column;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.logo{
+    width: 50px;
+} 
+
+.usuario {    
+    grid-column: 2/3;
+    grid-row: 1/2;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+.usuarios {    
+    display: flex;
+    flex-direction: row;
+    align-content: flex-end;
+    justify-content: flex-end;
+}
+
+#btn-inicio,
+#btn-registro {
+    font-size: 10px;
+    background-color: rgba(59, 113, 215, 0.39);
+    width: 50px;
+    height: 20px;
+    padding: 4px;
+    border: none;
+    color: white;
+    
+}
+/* menu */
+/* buscando */
+
+/* buscador */
+
+.busqueda {
+    /* background-color: red; */
+    /* height: 100%;
+    width: 100%; */
+    grid-column: 2/3;
+    grid-row: 2/3;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+.buscando {
+    background-color: rgba(59, 113, 215, 0.39);
+    width: auto;
+    height: 25px;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.buscando p {
+    font-family: sans-serif;
+    font-size: 9px;
+    color: white;     
+    margin-right: 5px;
+
+}
+
+#btn-reciente,
+#btn-popular,
+#btn-enstock
+{
+    font-size: 9px;
+    height: 20px; 
+    color: white;   
+    background-color: rgba(5, 48, 127, 0.794);
+    margin: 5px;
+    padding: 7px;
+    border: none;
+}
+
+/* fondo compraren */
+.grilla-compraren {
+    width: 100%;
+    height: 87vh;
+    background-color: rgba(155, 189, 251, 0.39);
+    display: grid;
+    grid-template-columns: 2fr repeat(2, 3fr) 2fr;
+    grid-template-rows: 20px repeat(7, 1fr);
+}
+
+.lateral-izq {
+    background-color: rgb(5, 12, 140);
+    grid-column: 1/2;
+    grid-row: 1/9
+}
+
+.venta { 
+    grid-column: 2/4; 
+    grid-row: 1/9;
+    background-color: rgb(0, 255, 21);
+    border-color: 3px white;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 20px repeat(7, 1fr);
+    gap: 3px;
+}
+
+
+.seleccion {
+    background-color: rgb(253, 254, 254);
+    font-size: 10px;
+    grid-column: 1/3;
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 20px;;
+}
+
+.productos {
+    /* background-color: rgb(0, 255, 21); */
+    width: auto;
+    padding: 5px;
+    grid-column: 1/2;
+    grid-row: 1;
+}
+
+.grilla-venta {
+    /* background-color: rgb(0, 255, 21); */
+    grid-column: 1/3;
+    grid-row: 2/9;
+    gap: 5px;
+    
+} 
+
+/* queda en espera para productos */
+/* .vende {
+    background-color: white;
+    gri
+} */
+
+.lateral-der {
+    background-color: rgb(216, 9, 9);
+    grid-column: 4/5;
+    grid-row: 1/9    
+} 
+
+}

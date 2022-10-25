@@ -1,0 +1,446 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: sans-serif;
+    text-decoration: none;
+    color: rgb(2, 2, 192);
+    background-color: rgb(12, 64, 162);
+}
+
+/* fondo */
+.navegador {
+    width: 100%;
+    height: 100px;
+    background-color: rgba(12, 64, 162, 0.39);
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+/* logo */
+.logonav {
+    background-color: rgba(255, 255, 255, 0.652);
+    padding: 15px;
+    height: auto;
+    grid-column: 1/3;
+    grid-row: 1;
+}
+
+.logonav {
+    display: flex;
+    flex-direction: column;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.logo{
+    width: 100px;
+}
+
+.usuario {
+    height: 100%;
+    /* background-color: rgba(137, 5, 66, 0.697); */
+    grid-column: -1;
+    grid-row: 1;
+}
+
+.usuario {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+}
+.usuarios {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    align-content: flex-end;
+    justify-content: flex-end;
+}
+
+
+.usuarios {
+    grid-row: 2;
+}
+#btn-inicio,
+#btn-registro {
+    font-size: 10px;
+    background-color: rgba(59, 113, 215, 0.39);
+    width: 50px;
+    height: 20px;
+    padding: 4px;
+    border: none;
+    color: white;
+    
+}
+/* menu */
+/* buscando */
+
+/* buscador */
+
+.busqueda {
+    /* background-color: red; */
+    height: 100%;
+    grid-column: -1;
+    grid-row: 1;
+}
+.busqueda{
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+}
+.buscando {
+    grid-row: 3;
+}
+
+.buscando {
+    background-color: rgba(59, 113, 215, 0.39);
+    width: 280px;
+    height: 25px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.buscando p {
+    font-family: sans-serif;
+    font-size: 11px;
+    color: white;     
+    margin-right: 5px;
+
+}
+
+#btn-reciente,
+#btn-popular,
+#btn-enstock
+{
+    font-size: 10px;
+    height: 20px; 
+    color: white;   
+    background-color: rgba(5, 48, 127, 0.794);
+    margin: 5px;
+    padding: 7px;
+    border: none;
+}
+
+
+/* fondo Mostrador */
+.grilla-Mostrador {
+    width: 100%;
+    height: 125vh;
+    background-color: rgba(155, 189, 251, 0.39);
+    font-size: 10px;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+}
+
+.lateral-izq {
+    background-color: rgb(5, 12, 140);
+    grid-column: 1/3;
+    grid-row: 1/8
+}
+
+.venta {
+    grid-column: 3/9; 
+    grid-row: 1/8;  
+    background-color: rgb(255, 0, 144);
+    border-color: 3px white;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10px 1fr;
+    gap: 5px;    
+}
+
+.seleccion {
+    background-color: rgb(253, 254, 254);
+    grid-column: 1/3;
+    grid-row:  1/5;
+    display: grid;    
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows:  30px 2fr 3fr 2fr;
+}
+
+.productos {
+    background-color: rgb(0, 255, 21);
+    padding: 5px;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.mapa1{
+    padding: 5px;
+    grid-column: 2/3;
+    grid-row: 1;
+}
+
+.grilla-venta {
+    background-color: rgb(0, 255, 21);
+    border: 3px white;
+    grid-column: 1/3;
+    grid-row:  2/5;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 2fr);
+    gap: 5px;
+}
+
+.otra-venta1{
+    background-color: red;
+    height: auto;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.otra-venta2{
+    background-color: yellow;
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+.explorar-map3{
+    background-color: rgb(0, 255, 195);
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+
+.datos-negocio {
+    background-color: rgb(255, 255, 255);
+    height: auto;
+    grid-column: 1/4;
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: center;
+}
+
+.logo-empresa{
+    background-color: red;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    
+}
+
+.logo {
+    background-color: yellow;
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.prod-similares{
+    background-color: rgb(174, 255, 0);
+    height: 30px;
+    text-align: center;
+    grid-column: 1/4;
+    grid-row: 3/4;
+
+}
+
+.otro-art1{
+    background-color: red;
+    height: auto;
+    grid-column: 1/2;   
+    grid-row: 2/3;
+}
+.otro-art2{
+    background-color: yellow;
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+.otro-art3{
+    background-color: rgb(0, 255, 195);
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+.lateral-der {
+    background-color: rgb(216, 9, 9);
+    grid-column: 9/11;
+    grid-row: 1/8    
+}
+
+.vende {
+    background-color: rgb(216, 9, 109);
+    grid-column: 1/4;
+    grid-row: 4/5;    
+}
+
+.otra-venta1{
+    background-color: red;
+    height: auto;
+    grid-column: 1/2;   
+    grid-row: 2/3;
+}
+.otra-venta2{
+    background-color: yellow;
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+.otra-venta3{
+    background-color: rgb(0, 255, 195);
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+@media screen and (max-width: 500px) {
+
+    /* fondo */
+    .navegador {
+        width: 100%;
+        height: 60px;
+        background-color: rgba(12, 64, 162, 0.39);
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: 1fr 2fr;
+    }
+    
+    /* logo */
+    .logonav {
+        background-color: rgba(255, 255, 255, 0.652);
+        padding: 15px;
+        height: auto;
+        grid-column: 1/2;
+        grid-row: 1/3;
+    }
+    
+    .logonav {
+        display: flex;
+        flex-direction: column;
+        flex-direction: row;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+    }
+    
+    .logo{
+        width: 50px;
+    } 
+    
+    .usuario {    
+        grid-column: 2/3;
+        grid-row: 1/2;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+    
+    .usuarios {    
+        display: flex;
+        flex-direction: row;
+        align-content: flex-end;
+        justify-content: flex-end;
+    }
+    
+    #btn-inicio,
+    #btn-registro {
+        font-size: 10px;
+        background-color: rgba(59, 113, 215, 0.39);
+        width: 50px;
+        height: 20px;
+        padding: 4px;
+        border: none;
+        color: white;
+        
+    }
+
+    .busqueda {
+        grid-column: 2/3;
+        grid-row: 2/3;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+    
+    .buscando {
+        background-color: rgba(59, 113, 215, 0.39);
+        width: auto;
+        height: 25px;
+        grid-column: 2/3;
+        grid-row: 2/3;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+    
+    .buscando p {
+        font-family: sans-serif;
+        font-size: 9px;
+        color: white;     
+        margin-right: 5px;
+    
+    }
+    
+    #btn-reciente,
+    #btn-popular,
+    #btn-enstock
+    {
+        font-size: 9px;
+        height: 20px; 
+        color: white;   
+        background-color: rgba(5, 48, 127, 0.794);
+        margin: 5px;
+        padding: 7px;
+        border: none;
+    }
+    
+
+
+/* fondo Mostrador */
+.grilla-Mostrador {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(155, 189, 251, 0.39);
+    font-size: 8px;
+    display: grid;
+    grid-template-columns: 3fr repeat(3, 3fr) 3fr;
+    grid-template-rows: repeat(7, 1fr);
+}
+
+.venta {
+    grid-column: 2/5; 
+    grid-row: 1/8;  
+    height: auto;
+    border-color: 3px white;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 10px 2fr 3fr 2fr;
+    
+}
+
+.seleccion {
+    background-color: rgb(253, 254, 254);
+    grid-column: 1/5;
+     height: 75px;
+     display: grid;
+    grid-template-columns: repeat(2, 2fr)
+}
+
+.productos {
+    background-color: rgb(0, 255, 21);
+    padding: 5px;
+    grid-row: 2;
+}
+
+.mapa1{
+    padding: 5px;
+    grid-row: 2;
+}
+    
+.grilla-venta {
+    background-color: rgb(0, 255, 21);
+    border: 3px white;
+    height: auto;
+    grid-column: 1/5;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 2fr 4fr 10px  repeat(3, 2fr);
+    gap: 3px;
+}
+
+}

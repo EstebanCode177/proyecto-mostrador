@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: sans-serif;
+    text-decoration: none;
+    color: rgb(142, 142, 143);
+    background-color: rgb(126, 126, 126);
+}
+
+
+
+/* fondo */
+.grilla {
+    width: 100%;
+    height: 100vh;
+    /* background-color: rgba(12, 64, 162, 0.39); */
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+}
+
+
+/* mapa */
+.mapa {
+
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+}
+
+#mapa {
+    
+    width: 100%;
+    height: 100vh;
+}
+
+
+
+/* logo */
+.logonav {
+    /* background-color: rgba(12, 64, 162, 0.39); */
+    z-index: 1001;
+    padding-top: 15px;
+    height: auto;
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.logonav {
+    display: flex;
+    flex-direction: column;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.logo{
+    width: 100px;
+
+}
+
+/* usuarios */
+.usuarios {
+    z-index: 1001;
+    /* background-color: rgba(12, 64, 162, 0.39); */
+    /* height: auto; */
+    grid-column: 2/3;
+    grid-row: 2;
+    width: auto;
+    margin: 10px 10px;
+    display: flex;
+    /* flex-direction: column; */
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+
+#btn-inicio,
+#btn-registro {
+    font-size: 15px;
+    background-color: rgba(255, 0, 0, 0.65);
+    width: 22%;
+    height: 20px;
+    padding: 3px;
+    border: none;
+    color: white;
+    
+}
+/* buscando */
+.buscando {
+    z-index: 1001;
+    background-color: rgba(12, 64, 162, 0.786);
+    width: 300px;
+    height: 25px;
+    grid-column: 8/-1;
+    grid-row: 1;
+    
+}
+
+.buscando {
+    justify-self: center;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.buscando p {
+    font-family: sans-serif;
+    font-size: 12px;
+    color: white;     
+    margin-right: 5px;
+}
+
+#btn-reciente,
+#btn-popular,
+#btn-enstock
+{
+    font-size: 12px;
+    height: 20px; 
+    color: white;   
+    background-color: rgba(5, 48, 127, 0.794);
+    margin: 5px;
+    padding: 7px;
+    border: none;
+    align-items: center;
+}
+
+/* buscador */
+.buscador {
+    z-index: 1001;
+    /* justify-self: center; */
+    background-color: rgba(12, 64, 162, 0.39);
+    height: 25px;
+    grid-column: 4/8;
+    grid-row: 1;
+}
+
+.buscador {
+    height: 25px;
+    background-color: rgb(12, 64, 162);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.buscador p {
+    font-family: sans-serif;
+    font-size: 12px;
+    color: white;     
+}
+
+#btn-explorar-map img {
+    display: block;
+    height: 14px;
+    margin-right: 7px;
+}
+#btn-explorar-map {
+    font-size: 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.ubicar {
+    z-index: 1001;
+    
+    width: 300px;
+    grid-column: 2/3;
+    grid-row: 3/10;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 5fr;
+    gap: 10px;
+}
+
+.titulo { 
+        height: 30px; 
+        background-color: rgb(248, 250, 252);
+        color: red;
+        text-align: center; }
+
+
+@media screen and (max-width: 500px) {
+
+
+    .grilla {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 30px 30px 2fr 30px 2fr 2fr 30px;
+    }
+
+     .logonav {
+        width: 100%;
+        grid-column: 2/3;
+        grid-row: 3;
+        justify-content: center;
+        align-items: center;
+        align-content: center; 
+        justify-items: center;   
+        
+    }
+   
+    .usuarios {
+        width: 100%;
+        grid-column: 2/3;
+        grid-row: 4;
+        justify-content: center;
+        align-items: center;
+        align-content: center;  
+    }
+
+    .buscando {
+        width: 100%;
+        grid-column: 2/3;
+        grid-row: 1;
+        justify-content: center;
+        align-items: center;
+        align-content: center; 
+    }
+
+    .buscador {
+        grid-column: 2/3;
+        grid-row: 2;
+        height: 30px;  
+    }
+
+    .prod-simil {
+        z-index: 1001;
+        
+        width: 300px;
+        grid-column: 2/3;
+        grid-row: 6/7;
+        display: grid;
+        grid-template-columns:2fr 3fr 2fr;
+        grid-template-rows: 1fr 3fr;
+        gap: 5px;
+        ;
+    }
+    
+    .titulo { grid-row: 1;
+            grid-column: 1/4;
+            height: 30px; 
+            background-color: rgb(248, 250, 252);
+            color: red;
+            text-align: center; }
+    
+     
+}

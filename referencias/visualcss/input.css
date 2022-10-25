@@ -1,0 +1,13 @@
+.buscador #input {
+    color: white;
+    width: 50%;
+    height: 65%;
+    background-color: rgb(110, 107, 107);
+    border: none;
+    border-bottom: 1px solid white;
+    opacity: 0.8;;
+}
+
+.buscador #input:hover {
+    background-color:  rgb(141, 143, 146);;
+}

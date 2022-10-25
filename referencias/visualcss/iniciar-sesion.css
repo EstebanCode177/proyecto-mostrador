@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: sans-serif;
+    text-decoration: none;
+    color: rgb(2, 2, 192);
+    background-color: rgb(12, 64, 162);
+}
+
+/* fondo */
+.grilla {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(12, 64, 162, 0.39);
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+}
+
+
+
+
+
+.fondo {
+    background-color: rgba(12, 64, 162, 0.697);
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+}
+
+.registro {
+    background-color: rgba(255, 255, 255, 0.697);
+    grid-column: 4/8;
+    grid-row: 3/9;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);    
+    grid-template-rows: 10px 1fr 30px 2fr 3fr 1fr 10px;
+}
+
+/* logo */
+.logonav {
+    padding-top: 15px;
+    height: auto;
+    grid-column: 3/5;
+    grid-row: 2/3;
+}
+
+.logonav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.logo {
+    width: 80%;
+
+}
+/* usuarios */
+.usuarios {
+    grid-column: 2/6;
+    grid-row: 3/4;
+    margin: 6px;
+    text-align: center;
+    font-size: 1em;
+    color: rgb(26, 0, 154);
+    border: none;
+}
+
+/* datos */
+.rellenar {
+    grid-column: 2/6;
+    grid-row: 4/5;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(2, 1fr);
+    align-content: center;
+    gap: 5px 5px;
+}
+.usuarios {
+    grid-row: 3/4;
+}
+.datos p {height: 15px;}
+
+.dato3 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.dato4 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.p-relleno {
+    color: rgb(12, 64, 162);
+    font-size: 12px;
+    height: auto;   
+    text-align: left;
+}
+
+#btn-nombre,
+#btn-apellido,
+#btn-contraseña,
+#btn-repetir {
+    width: 100%;
+    height: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 10px;
+    text-align: center;
+    color: gray;
+}
+
+#btn-correo {
+    width: 100%;
+    height: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 10px;
+    text-align: center;
+    color: gray;
+}
+
+
+/* boton registro */
+.registrarse {
+    grid-column: 1/8;
+    grid-row: 6/7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* #btn-registrarse {
+    
+} */
+
+#btn-registrarse,
+p  {
+    height: 30px;
+    width: 50%;
+    margin: 2px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 10px;
+    text-align: center;
+    color: gray;
+}
+
+input {
+    width: 10px;
+    float: left;
+}
+p, label {
+    align-items: center;
+    font-size: 10px;
+    color: rgba(12, 64, 162, 0.697)
+}
+
+label {
+    padding-left: 10px;
+}
+
+@media screen and (max-width: 500px) {
+
+    .registro {
+        grid-column: 2/10;
+        grid-row: 3/9;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);    
+        grid-template-rows: 10px auto 40px 2fr 2fr 10px;    
+    }
+
+    .logonav {
+        width: 70%;
+        grid-column: 3/6;
+        grid-row: 2/3;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    .dato3 {
+        grid-column: 2/6;
+        grid-row: 3/4;
+    }
+
+    
+    .dato3 {
+        grid-column: 1/4;
+        grid-row: 3;
+    }
+    
+    .dato4 {
+        grid-column: 1/4;
+        grid-row: 4;
+    }
+
+
+}
